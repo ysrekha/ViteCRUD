@@ -1,4 +1,71 @@
 <!-- 
+    Task 1: Create a new Vite project
+You’ll need to create a new Vite project that will be in a different folder from your original CRD app. That way you’ll have both versions separate from each other.
+
+You’ll want to run Vite’s project creator in an interactive terminal, like Windows PowerShell, instead of a non-interactive terminal like Git Bash. You can tell you’re not in an interactive terminal if you can’t use the arrow keys to navigate between Vite’s framework options.
+
+When Vite asks you to pick a framework, pick Vanilla (no framework).
+
+And when Vite asks you to pick a variant, pick TypeScript.
+
+Task 2: Copy the CRD app code into the new project
+Copy the code from the CRD app into main.ts. You can delete the code that was there before.
+
+Copy the HTML into index.html. But do NOT use a script tag in the HTML file to connect the JS file. Vite needs to handle that so it can transpile the TypeScript.
+
+
+Your app should work the same as before when you’re done.
+
+You will have type errors, we’ll fix those next, but those won’t stop the app from running.
+
+Run your app with Vite’s "npm run dev" command. Do NOT use Live Server to run your app. Live Server doesn’t work with TypeScript.
+
+Task 3: Fix any Typescript type errors
+While an app can run with type errors, we want to fix them to make sure our code is well written and protected against type bugs.
+
+
+Type errors usually show up as red squiggly underlines in the code. They’ll also probably turn the name of the file red.
+
+You can see a list of errors for the file you have open in the Problems tab. You can open the Problems tab by going to View → Problems.
+
+
+You can also get a list of all the errors in your app by running "npm run build".
+That command makes a “built” (nicely transpiled and hooked together) version of your app that you could put up and host somewhere. In that process, it carefully checks all your code for errors, so if you don’t get any errors when you run that command, you know that you don’t have any errors.
+
+Task 4: Separate the code into multiple files
+Separate your CRD app JavaScript/TypeScript code into at least 3 files. In professional apps, code is always split into many files.
+
+
+Each of those files should be TypeScript files that end in .ts instead of .js.
+
+
+You’ll need to use import and export to use functions and variables from one file in another file.
+
+
+Your app should work the same as before when you’re done.
+
+Task 5: Testing
+The CRD app should work the same as before, with the ability to create, read, and delete entities.
+
+
+Here are the other requirements:
+
+It should run with the Vite command "npm run dev"
+
+It should be written in TypeScript
+
+It should have no type error
+
+There should be at least 3 Typescript .ts files that use import and export to work together
+-->
+
+
+
+
+
+
+
+<!-- 
 Create a full CRUD application of passengers using an API or JSON Server.
 Use JQuery/AJAX to interact with the API. 
 Use a form to post new entities.

@@ -1,0 +1,121 @@
+<!-- 
+Create a full CRUD application of passengers using an API or JSON Server.
+Use JQuery/AJAX to interact with the API. 
+Use a form to post new entities.
+Build a way for users to update or delete entities.
+Include a way to get entities from the API.
+Use Bootstrap and CSS to style your project. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"> <!-- Passenger List Section -->
+        
+        <!-- Displays a table to list passengers. Rows will be added dynamically.-->
+        <div class="box  bg-light mt-3">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-3">Passenger List:</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-light">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Origin</th>
+                                    <th>Destination</th>
+                                    <th>ID</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="passengers-container">
+                                <!-- Table rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Forms Section -->
+        <div class="row">
+            <div class="col">
+                <div class="border bg-light p-3 box">
+                    <form id="addNewPassengerForm">
+                        <h4>Add New Passenger Form</h4>
+                        <div class="form-group">
+                            <label for="newFirst">First Name:</label>
+                            <input id="newFirst" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newLast">Last Name:</label>
+                            <input id="newLast" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newOrigin">Origin:</label>
+                            <input id="newOrigin" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newDestination">Destination:</label>
+                            <input id="newDestination" class="form-control" required>
+                        </div>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Add New Passenger</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Update Passenger Form -->
+            <!--Allows users to update existing passenger details.-->
+            <div class="col-md-6">
+                <div class="border bg-light p-3 box">
+                    <form id="updatePassengerForm">
+                        <h4>Update Passenger Form</h4>
+                        <div class="form-group">
+                            <label for="updateFirst">First Name:</label>
+                            <input id="updateFirst" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateLast">Last Name:</label>
+                            <input id="updateLast" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateOrigin">Origin:</label>
+                            <input id="updateOrigin" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateDestination">Destination:</label>
+                            <input id="updateDestination" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateId">ID:</label>
+                            <input id="updateId" class="form-control" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Update Passenger</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Scripts -->
+    <!--Includes TypeScript file -->
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
+
+
